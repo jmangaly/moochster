@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Oleo+Script);
+
 .booyah-box {
   -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
   -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
@@ -16,12 +18,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 body {
-  background: url('/assets/beige_paper.png');
+  background: url('/assets/ricepaper_v3.png');
    font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
 }
 
 .navbar.navbar-inverse {
-  background:url('/assets/black_linen_v2.png');
+  background:url('/assets/grey_wash_wall.png');
   border-radius: 0;
   box-shadow: 0px 1px 3px #3B3B3B;
+}
+
+.navbar-inverse .navbar-brand {
+  color: #8B1414;
+  font-family: 'Oleo Script', cursive;
+  font-size:28px;
 }
