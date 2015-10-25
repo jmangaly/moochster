@@ -35,6 +35,12 @@ end
 # Use Bootstrap
 gem 'bootstrap-sass', '~> 3.3.0'
 
+# Gemfile for Rails 3+, Sinatra, or Merb
+gem 'will_paginate', '~> 3.0.7'
+
+# Adding form
+gem 'simple_form'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
