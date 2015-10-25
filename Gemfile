@@ -41,6 +41,9 @@ gem 'will_paginate', '~> 3.0.7'
 # Adding form
 gem 'simple_form'
 
+# Devise for User Authentication 
+gem 'devise', '>= 3.2.4'
+
 #Use Sprockets
 gem 'sprockets', '2.11.0'
 
