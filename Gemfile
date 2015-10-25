@@ -7,7 +7,7 @@ gem 'rails', '4.0.1'
 gem 'pg'
 
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.0'
+gem 'sass-rails'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
@@ -33,13 +33,16 @@ group :doc do
 end
 
 # Use Bootstrap
-gem 'bootstrap-sass', '~> 3.3.0'
+gem 'bootstrap-sass', '3.3.5.1'
 
 # Gemfile for Rails 3+, Sinatra, or Merb
 gem 'will_paginate', '~> 3.0.7'
 
 # Adding form
 gem 'simple_form'
+
+#Use Sprockets
+gem 'sprockets', '2.11.0'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
