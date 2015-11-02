@@ -32,6 +32,12 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+# Geocoder for addresses 
+gem "geocoder"
+
+# Figaro for setting enviroment variable
+gem "figaro", ">= 1.0.0"
+
 # Use Bootstrap
 gem 'bootstrap-sass', '3.3.5.1'
 
