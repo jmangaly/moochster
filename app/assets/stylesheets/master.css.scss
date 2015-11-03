@@ -12,14 +12,23 @@
   padding:20px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+a, h1, h2, h3, h4, h5, h6 {
   margin:0;
   padding:0;
+  color: #B00C0C;
+}
+
+p {
+  margin:0;
+  padding:0;
+  color: #590000;
+  font-size: 14px;
 }
 
 body {
   background: url('/assets/ricepaper_v3.png');
    font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+
 }
 
 .navbar.navbar-inverse {
