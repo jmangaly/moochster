@@ -60,14 +60,14 @@ clear {
 
 blockquote {
   background: #f9f9f9;
-  border-left: 10px solid #ccc;
+  border-left: 10px solid #8B1414;
   margin: 1.5em 10px;
   padding: 0.5em 10px;
   quotes: "\201C""\201D""\2018""\2019";
 }
 
 blockquote:before {
-  color: #ccc;
+  color: #8B1414;
   content: open-quote;
   font-size: 4em;
   line-height: 0.1em;
@@ -77,4 +77,8 @@ blockquote:before {
 
 blockquote p {
   display: inline;
+}
+
+button {
+  background: #70655e;
 }
