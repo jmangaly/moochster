@@ -1,27 +1,28 @@
-<div class="booyah-box">
+<div class ="booyah-box col-xs-10 col-xs-offset-1">
   <div class= "col-xs-4">
-	 <%= image_tag 'user.png'%>
+	 <%= image_tag 'user.png', class: "img-responsive" %>
   </div>
 
 	<div class="col-xs-8">
-		<h1><%= @user.email %></h1>
+		<h2><%= @user.email %></h2>
 		<h3>Member Since: <%= @user.created_at.strftime("%B %d, %Y") %></h3>
 		<h4><%= @user.comments.count %> Total Comments</h4>
 		<h4><%= @user.comments.where(:rating => '5_stars').count %> Total 5 Star Reviews</h4>
-
 	</div>
+
    <div class="clear"> </div>
 </div>
 
-<br /><br />
-
+<br /> <br />
+<div class="col-xs-12">
 <h1 class="text-center">My Comments</h1>
+<br /> <br />
+</div>
 
-<br /><br />
 
 <% @user.comments.each do |comment| %>
     <div class="col-xs-12 col-sm-6">
-    	<h2 class="text-center"><%= link_to comment.place.name, place_path(comment.place) %></h2>
+    	<h3 class="text-center"><%= link_to comment.place.name, place_path(comment.place) %></h3>
     	<blockquote>
       		<% if comment.humanized_rating.present? %>
         		<b><%= comment.humanized_rating %></b> -
@@ -32,19 +33,20 @@
   </div>
 <% end %>
 
-  <div class="clear"></div>
+<div class="clear"></div>
 
-  <br /> <br />
-  
-  <h1 class="text-center">My Places</h1>
-  
-  <br /><br />
+<br /><br />
+<div class="col-xs-12">
+<h1 class="text-center">My Places</h1>
+<br /> <br />
+</div>
+
 
   <% @user.places.each do |place| %>
   	<div class ="booyah-box col-xs-10 col-xs-offset-1">
-  	<h2><%= link_to place.name, place_path(place) %></h2><br />
-    <i><%= place.address %></i><br />
-    <p><%= place.description %></p><br />
+  	     <h2><%= link_to place.name, place_path(place) %></h2><br />
+         <i><%= place.address %></i><br />
+          <p><%= place.description %></p><br />
 
 	<% if place.user.present? %>
       <small><%= place.user.email %></small>
