@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Oleo+Script);
+@import url(https://fonts.googleapis.com/css?family=EB+Garamond|Oleo+Script);
 
 .booyah-box {
   -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
@@ -22,13 +22,21 @@ p {
   margin:0;
   padding:0;
   color: #590000;
-  font-size: 14px;
+  font-size:medium;
+  font-family: 'EB Garamond', serif;
+ 
+}
+
+i {
+   font-size:medium;
+   padding:0;
+   color: #590000;
+   font-family: 'EB Garamond', serif;
 }
 
 body {
   background: url('/assets/ricepaper_v3.png');
-   font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
-
+  font-family: 'EB Garamond', serif;
 }
 
 .navbar.navbar-inverse {
@@ -78,6 +86,7 @@ blockquote:before {
 
 blockquote p {
   display: inline;
+  font-size:medium;
 }
 
 .carousel-inner > .item > img, .carousel-inner > .item > a > img {
@@ -98,5 +107,9 @@ blockquote p {
 
 .carousel {
   box-shadow: 0px 3px 8px #2a2a2a;
+}
+
+a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
 }
 
