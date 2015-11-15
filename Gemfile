@@ -50,6 +50,9 @@ gem 'simple_form'
 # Devise for User Authentication 
 gem 'devise', '>= 3.2.4'
 
+# Install Factory Girl
+gem "factory_girl_rails", "~> 4.0"
+
 #Use Sprockets
 gem 'sprockets', '2.11.0'
 

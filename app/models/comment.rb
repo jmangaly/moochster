@@ -18,5 +18,9 @@ RATINGS = {
   def send_comment_email
       NotificationMailer.comment_added(self).deliver
   end
+
+  #def one_star
+  # 10
+  # end 
   
 end
